@@ -1,0 +1,105 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas</title>
+  <link rel="shortcut icon" href="christmas.png" type="image/x-icon">
+  <style>
+    /* Reset styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Background and main content styles */
+    .container {
+      background: url('ban.avif') no-repeat center center/cover;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .title {
+      font-size: 4rem;
+      margin: 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background: rgba(255, 0, 0, 0.8);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    .btn:hover {
+      background: rgba(255, 50, 50, 1);
+      box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.5);
+      transform: scale(1.1);
+    }
+
+    /* Fade-in animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+        .title {
+      font-size: 1.7rem;
+      margin: 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      animation: fadeIn 3s ease-in-out;
+    }
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <h1 class="title">🎄 Merry Christmas! 🎅</h1>
+    <p class="subtitle">Celebrate the joy and warmth of the holiday season with us.</p>
+    <a href="home.html" class="btn">Create Card</a>
+  </div>
+</body>
+</html>
+

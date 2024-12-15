@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Card Creator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="christmas.png" type="image/x-icon">
+</head>
+<body>
+    <video src="christmas-music-merry-christmas-264517.mp3" autoplay loop style="display: none;"></video>
+  <header>
+    <h1>🎄 Christmas Card Creator 🎅</h1>
+    <p>Create, download, and share personalized Christmas cards for your loved ones!</p>
+  </header>
+
+  <main>
+    <section id="hero-section">
+      <div class="countdown">
+        <h2>Countdown to Christmas</h2>
+        <p id="countdown" class="animated-countdown"></p>
+        <p id="countdown-message"></p>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h2>Create Your Card</h2>
+      <form id="card-form">
+        <label for="name">Recipient's Name:</label>
+        <input type="text" id="name" placeholder="Enter recipient's name" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" placeholder="Write a heartfelt message" required></textarea>
+
+        <label for="sender-name">Your Name:</label>
+        <input type="text" id="sender-name" placeholder="Enter your name" required>
+
+        <label for="card-image">Upload an Image:</label>
+        <input type="file" id="card-image" accept="image/*">
+
+        <button type="button" id="generate-card">Generate Card</button>
+      </form>
+    </section>
+
+    <section id="card-preview-section">
+      <h2>Your Card Preview</h2>
+      <div id="card-container" class="generated-card">
+        <div id="card-content">
+          <h3 id="preview-name">Recipient's Name</h3>
+          <p id="preview-message">Your heartfelt message here...</p>
+          <div id="preview-image-container"></div>
+          <p id="preview-from">From: Your Name</p>
+        </div>
+      </div>
+      <button id="download-pdf">Download as PDF and then share</button>
+      
+    </section>
+  </main>
+
+  <footer style="text-align: center; color: white;">
+    <p>🎅 Happy Holidays and Merry Christmas! 🎄</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

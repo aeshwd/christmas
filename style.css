@@ -1,0 +1,144 @@
+/* General Styles */
+body, h1, h2, p, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: black;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 10px;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e5533f;
+  }
+  
+  #hero-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #countdown {
+    font-size: 2em;
+    color: #ff6347;
+  }
+  
+  #card-container {
+    background: linear-gradient(135deg, #f06, #ffc107);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #card-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  #preview-from {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  
+    .generated-card {
+      height: auto;
+    }
+  }
+
+
+  /* Countdown Animation */
+.animated-countdown {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff6347;
+    animation: fadeIn 1s ease-in-out infinite;
+  }
+  
+  @keyframes fadeIn {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  /* Card and Layout Styling */
+  #card-container {
+    background: linear-gradient(135deg, #ff6347, #ffcc33);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #card-container img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  #preview-from {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  
+  
+  
